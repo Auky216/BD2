@@ -4,4 +4,4 @@ Pedro      Paredes
 Ysaura     Julca      
 Omar       Mendoza    
 Luisa      Cordova    
-Toribio    Leon       
+Toribio    Leon

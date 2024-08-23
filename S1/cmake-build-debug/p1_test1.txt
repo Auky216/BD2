@@ -1,0 +1,5 @@
+0001 Juan        Perez          Informatica    1 500.0
+0002 Maria       Gomez          Sistemas       2 450.0
+0003 Carlos      Lopez          Civil          3 520.0
+0004 Ana         Rodriguez      Industrial     2 480.0
+0005 Luis        Hernandez      Electronica    4 510.0

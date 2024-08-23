@@ -17,6 +17,14 @@ void operator >> (ifstream &stream, Students &students){
     stream.get();
 }
 
+ostream &operator << (ostream& stream,Students& record){
+    stream.write(record.name,12);
+    stream.write(record.lastname,12);
+
+    stream<<flush;
+    return  stream;
+}
+
 int main(){
     ifstream file;
     file.open("test.txt");
@@ -44,9 +52,6 @@ int main(){
     for(int i = 0; i < vecStudents.size(); i++){
         cout <<"Name: "<< vecStudents[i].name << " " <<"Lastname: "<< vecStudents[i].lastname << endl;
     }
-
-
-
 
 
 }
