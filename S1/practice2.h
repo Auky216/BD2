@@ -82,7 +82,7 @@ int main() {
     cout << record.Nombre << " " << record.Apellidos << endl;
 
     // Leer un registro binario desde el archivo en la posición 0
-    Alumno record3 = readRecordBin(0);
+    Alumno record3 = readRecordBin(1);
     cout << record3.Nombre << " " << record3.Apellidos << endl;
 
     return 0;

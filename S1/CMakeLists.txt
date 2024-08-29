@@ -7,4 +7,5 @@ add_executable(S1
         main.cpp
         practice1.h
         P1.h
-        practice2.h)
+        practice2.h
+        P2.h)
