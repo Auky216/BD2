@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(S1
         main.cpp
         practice1.h
-        P1.h
+        p1.h
         practice2.h
-        P2.h)
+        p2.h
+        p3.h)

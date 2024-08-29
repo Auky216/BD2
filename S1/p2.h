@@ -89,6 +89,48 @@ public:
 
         file.close();
     }
+
+    Alumno readRecord(int pos){
+        ifstream file(this->nombreArchivo, ios::binary);
+        if(!file.is_open()){
+            cout<<"Cannot open the file"<<endl;
+            return Alumno();
+        }
+
+        Alumno record;
+        short size;
+        int count = 0;
+
+        while (count <= pos) {
+            if (!file.read((char*) &size, sizeof(short))) break;
+            char* buffer = new char[size + 1];
+            file.read(buffer, size);
+            buffer[size] = '\0';
+            record.Nombre = buffer;
+            delete[] buffer;
+
+            if (!file.read((char*) &size, sizeof(short))) break;
+            buffer = new char[size + 1];
+            file.read(buffer, size);
+            buffer[size] = '\0';
+            record.Apellido = buffer;
+            delete[] buffer;
+
+            if (!file.read((char*) &size, sizeof(short))) break;
+            buffer = new char[size + 1];
+            file.read(buffer, size);
+            buffer[size] = '\0';
+            record.Carrera = buffer;
+            delete[] buffer;
+
+            file.read((char*) &record.mensualidad, sizeof(float));
+
+            count++;
+        }
+
+        file.close();
+        return record;
+    }
 };
 
 void getTxt(string namefile) {
@@ -162,6 +204,16 @@ int main() {
         cout << endl;
         cout<<"---------------------------------------------"<<endl;
     }
+
+    cout<<"Cout the record in position 5"<<endl;
+    Alumno record = file.readRecord(5);
+    cout << "Nombre: "<<record.Nombre <<endl;
+    cout << "Apellido: " << record.Apellido << endl;
+    cout << "Carrera: " << record.Carrera << endl;
+    cout << "Mensualidad: : " << record.mensualidad << endl;
+    cout << endl;
+
+
 
     return 0;
 }
