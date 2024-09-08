@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "S1",
+					"name" : "S2",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "S1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-S1-Debug-a4a3acf460a762b8de6b.json",
-					"name" : "S1",
+					"id" : "S2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-S2-Debug-26bc6b92ec13d3cd8ebe.json",
+					"name" : "S2",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/adria/OneDrive/Escritorio/Proyects/BD2/S1/cmake-build-debug",
-		"source" : "C:/Users/adria/OneDrive/Escritorio/Proyects/BD2/S1"
+		"build" : "C:/Users/adria/OneDrive/Escritorio/Proyects/BD2/S2/cmake-build-debug",
+		"source" : "C:/Users/adria/OneDrive/Escritorio/Proyects/BD2/S2"
 	},
 	"version" : 
 	{

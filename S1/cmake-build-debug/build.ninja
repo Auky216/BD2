@@ -55,6 +55,24 @@ build CMakeFiles/S1.dir/main.cpp.obj: CXX_COMPILER__S1_unscanned_Debug C$:/Users
   OBJECT_DIR = CMakeFiles\S1.dir
   OBJECT_FILE_DIR = CMakeFiles\S1.dir
 
+build CMakeFiles/S1.dir/p1.cpp.obj: CXX_COMPILER__S1_unscanned_Debug C$:/Users/adria/OneDrive/Escritorio/Proyects/BD2/S1/p1.cpp || cmake_object_order_depends_target_S1
+  DEP_FILE = CMakeFiles\S1.dir\p1.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\S1.dir
+  OBJECT_FILE_DIR = CMakeFiles\S1.dir
+
+build CMakeFiles/S1.dir/p2.cpp.obj: CXX_COMPILER__S1_unscanned_Debug C$:/Users/adria/OneDrive/Escritorio/Proyects/BD2/S1/p2.cpp || cmake_object_order_depends_target_S1
+  DEP_FILE = CMakeFiles\S1.dir\p2.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\S1.dir
+  OBJECT_FILE_DIR = CMakeFiles\S1.dir
+
+build CMakeFiles/S1.dir/p3.cpp.obj: CXX_COMPILER__S1_unscanned_Debug C$:/Users/adria/OneDrive/Escritorio/Proyects/BD2/S1/p3.cpp || cmake_object_order_depends_target_S1
+  DEP_FILE = CMakeFiles\S1.dir\p3.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\S1.dir
+  OBJECT_FILE_DIR = CMakeFiles\S1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target S1
@@ -63,7 +81,7 @@ build CMakeFiles/S1.dir/main.cpp.obj: CXX_COMPILER__S1_unscanned_Debug C$:/Users
 #############################################
 # Link the executable S1.exe
 
-build S1.exe: CXX_EXECUTABLE_LINKER__S1_Debug CMakeFiles/S1.dir/main.cpp.obj
+build S1.exe: CXX_EXECUTABLE_LINKER__S1_Debug CMakeFiles/S1.dir/main.cpp.obj CMakeFiles/S1.dir/p1.cpp.obj CMakeFiles/S1.dir/p2.cpp.obj CMakeFiles/S1.dir/p3.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\S1.dir

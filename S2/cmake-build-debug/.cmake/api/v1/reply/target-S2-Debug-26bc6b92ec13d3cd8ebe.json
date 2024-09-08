@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "S1.exe"
+			"path" : "S2.exe"
 		},
 		{
-			"path" : "S1.pdb"
+			"path" : "S2.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -13,7 +13,8 @@
 	{
 		"commands" : 
 		[
-			"add_executable"
+			"add_executable",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -27,6 +28,12 @@
 			{
 				"command" : 0,
 				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
 				"line" : 6,
 				"parent" : 0
 			}
@@ -39,6 +46,13 @@
 			[
 				{
 					"fragment" : "-g -std=gnu++14 -fdiagnostics-color=always"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/adria/OneDrive/Escritorio/Proyects/BD2/S2/."
 				}
 			],
 			"language" : "CXX",
@@ -56,7 +70,7 @@
 			]
 		}
 	],
-	"id" : "S1::@6890427a1f51a3e7e1df",
+	"id" : "S2::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +90,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "S1",
-	"nameOnDisk" : "S1.exe",
+	"name" : "S2",
+	"nameOnDisk" : "S2.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -96,11 +110,7 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1,
-				2,
-				3,
-				4,
-				5
+				1
 			]
 		}
 	],
@@ -114,27 +124,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "practice1.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
 			"path" : "p1.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "practice2.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "p2.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "p3.h",
 			"sourceGroupIndex" : 1
 		}
 	],
